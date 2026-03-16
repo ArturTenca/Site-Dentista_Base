@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aqua Dental Loft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-neutral-50 text-neutral-900 selection:bg-cyan-100 selection:text-cyan-900 antialiased">
+
+    <!-- Navigation (Shared) -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 group/nav pt-[10px] px-[10px]" id="navbar">
+        <div class="absolute top-[10px] left-[10px] right-[10px] bottom-auto h-20 rounded-[15px] bg-white/60 backdrop-blur-lg border border-neutral-100 shadow-sm transition-all duration-300" id="nav-bg"></div>
+        <div class="relative flex h-20 max-w-7xl mx-auto px-6 items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 z-50 relative">
+                <div class="w-8 h-8 transition-all duration-300">
+                    <img src="https://i.ibb.co/7NRgqhWK/aqua-loft-logo.png" alt="Aqua Dental Loft Logo" class="w-full h-full object-contain">
+                </div>
+                <span class="font-serif text-lg tracking-tight font-medium text-neutral-950 transition-colors duration-300">Aqua Dental Loft</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-1 rounded-full px-2 py-1.5 border bg-neutral-100/50 border-neutral-200 transition-colors duration-300">
+                <a href="index.html" class="nav-link px-4 py-1.5 text-xs font-medium rounded-full transition-colors text-neutral-600 hover:text-neutral-900">Home</a>
+                <a href="services.html" class="nav-link px-4 py-1.5 text-xs font-medium rounded-full transition-colors text-neutral-600 hover:text-neutral-900">Services</a>
+                <a href="contact.html" class="nav-link px-4 py-1.5 text-xs font-medium rounded-full transition-colors text-cyan-600 bg-cyan-50">Contact Us</a>
+            </div>
+
+            <!-- CTA -->
+            <div class="hidden lg:block z-50">
+                <a href="index.html#booking" class="bg-neutral-950 text-white px-5 py-2 rounded-full text-xs font-semibold tracking-wide hover:bg-neutral-800 transition-colors shadow-lg">
+                    Book Now
+                </a>
+            </div>
+            
+             <!-- Mobile Toggle -->
+            <button class="lg:hidden p-2 z-50 relative text-neutral-900" id="mobile-toggle" aria-label="Menu" onclick="document.getElementById('mobile-menu').classList.remove('opacity-0', 'pointer-events-none')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-neutral-950 z-40 flex flex-col pt-24 px-6 opacity-0 pointer-events-none transition-all duration-300 lg:hidden overflow-y-auto">
+            <div class="flex flex-col gap-6 pb-20">
+                <a href="index.html" class="text-xl font-serif text-white border-b border-white/10 pb-4">Home</a>
+                <a href="services.html" class="text-xl font-serif text-white border-b border-white/10 pb-4">Services</a>
+                <a href="contact.html" class="text-xl font-serif text-cyan-400 border-b border-white/10 pb-4">Contact Us</a>
+                <a href="index.html#booking" class="mt-8 px-8 py-4 bg-white text-neutral-950 rounded-full text-center text-sm font-semibold">Book Appointment</a>
+            </div>
+            <button class="absolute top-6 right-6 text-white p-2" onclick="document.getElementById('mobile-menu').classList.add('opacity-0', 'pointer-events-none')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-40 pb-20 px-6 bg-white border-b border-neutral-200">
+        <div class="max-w-4xl mx-auto text-center reveal-on-scroll">
+            <span class="text-cyan-600 text-[10px] font-bold tracking-[0.2em] uppercase mb-4 block">Get in Touch</span>
+            <h1 class="text-4xl md:text-6xl font-serif text-neutral-900 leading-tight mb-6">We'd Love to <span class="italic text-neutral-500">Hear from You</span></h1>
+            <p class="text-neutral-500 font-light leading-relaxed max-w-2xl mx-auto">
+                Whether you have a question about our services, need to schedule an appointment, or have an emergency, our team is ready to provide the answers and support you need.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contact Info & Form -->
+    <section class="py-24 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+            
+            <!-- Information -->
+            <div class="reveal-on-scroll">
+                <h3 class="text-2xl font-serif text-neutral-900 mb-8">Contact Information</h3>
+                
+                <div class="flex items-start gap-4 mb-8">
+                    <div class="w-12 h-12 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-600 shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-neutral-900 mb-1">Our Location</h4>
+                        <p class="text-sm text-neutral-500 leading-relaxed mb-2">7050 W Palmetto Park Rd #52<br>Boca Raton, FL 33433</p>
+                        <a href="https://www.google.com/maps/place/Aqua+Dental+Loft/@26.3490243,-80.1576219,17z/data=!3m1!4b1!4m6!3m5!1s0x88d91c3b0fbe75e7:0x51f8ed01c7308d69!8m2!3d26.3490243!4d-80.1576219!16s%2Fg%2F1tfmp5hj?entry=ttu" target="_blank" class="text-xs font-semibold text-cyan-600 hover:text-cyan-700 underline underline-offset-2">Get Directions</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 mb-8">
+                    <div class="w-12 h-12 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-600 shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-neutral-900 mb-1">Phone</h4>
+                        <p class="text-sm text-neutral-500 leading-relaxed mb-2">For appointments and emergencies.</p>
+                        <a href="tel:+15612642264" class="text-lg font-serif text-neutral-900 hover:text-cyan-600 transition-colors">+1 (561) 264-2264</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-600 shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-neutral-900 mb-1">Email</h4>
+                        <p class="text-sm text-neutral-500 leading-relaxed mb-2">For general inquiries.</p>
+                        <a href="mailto:concierge@aquadental.com" class="text-sm font-medium text-neutral-900 hover:text-cyan-600 transition-colors">concierge@aquadentalloft.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl shadow-neutral-200/20 border border-neutral-100 reveal-on-scroll delay-100">
+                <h3 class="text-2xl font-serif text-neutral-900 mb-8">Send a Message</h3>
+                <form class="flex flex-col gap-6" onsubmit="event.preventDefault(); alert('Message Sent!');">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">First Name</label>
+                            <input type="text" placeholder="John" class="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-lg text-sm focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Last Name</label>
+                            <input type="text" placeholder="Doe" class="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-lg text-sm focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Email Address</label>
+                        <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-lg text-sm focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors" required>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Phone Number</label>
+                        <input type="tel" placeholder="(555) 123-4567" class="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-lg text-sm focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">How can we help?</label>
+                        <textarea rows="4" placeholder="Tell us about your needs..." class="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-lg text-sm focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors resize-none" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3.5 bg-neutral-900 text-white rounded-lg text-sm font-semibold hover:bg-neutral-800 transition-transform active:scale-[0.99] mt-2">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-[400px] w-full bg-neutral-200 relative reveal-on-scroll">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.62725516053!2d-80.1576219!3d26.3490243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91c3b0fbe75e7%3A0x51f8ed01c7308d69!2sAqua%20Dental%20Loft!5e0!3m2!1sen!2sus!4vX!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="filter grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+    </section>
+
+    <!-- Footer Shared -->
+    <footer class="bg-neutral-950 text-white pt-20 pb-10 border-t border-neutral-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="font-serif text-2xl text-white mb-6 block">Aqua Dental Loft</a>
+                    <div class="flex gap-4 text-neutral-400">
+                        <a href="#" class="hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+                        <a href="#" class="hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" class="hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-sm font-semibold mb-6 text-neutral-200">Navigation</h4>
+                    <ul class="space-y-3 text-xs text-neutral-400 font-light">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="index.html#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-semibold mb-6 text-neutral-200">Contact</h4>
+                    <ul class="space-y-3 text-xs text-neutral-400 font-light">
+                        <li class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 shrink-0 mt-0.5 text-cyan-400"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> 
+                            <a href="https://www.google.com/maps/place/Aqua+Dental+Loft/@26.3490243,-80.1576219,17z/data=!3m1!4b1!4m6!3m5!1s0x88d91c3b0fbe75e7:0x51f8ed01c7308d69!8m2!3d26.3490243!4d-80.1576219!16s%2Fg%2F1tfmp5hj" target="_blank" class="hover:text-white transition-colors">7050 W Palmetto Park Rd #52, Boca Raton, FL 33433</a>
+                        </li>
+                        <li class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 shrink-0 text-cyan-400"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg> 
+                            <a href="tel:+15612642264" class="hover:text-white transition-colors">+1 (561) 264-2264</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-semibold mb-6 text-neutral-200">Hours</h4>
+                    <ul class="space-y-3 text-xs text-neutral-400 font-light">
+                        <li class="flex justify-between"><span>Mon - Fri</span> <span>8:00 AM - 5:00 PM</span></li>
+                        <li class="flex justify-between"><span>Saturday</span> <span>Closed</span></li>
+                        <li class="flex justify-between"><span>Sunday</span> <span>Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-500 gap-4">
+                <p>© 2026 Aqua Dental Loft. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,676 @@
+<html lang="en" class="scroll-smooth"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aqua Dental Loft - Cosmetic, General &amp; Emergency Dentistry</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-neutral-900 selection:bg-cyan-100 selection:text-cyan-900 antialiased home-page">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 group/nav" id="navbar">
+        <div class="absolute inset-0 transition-all duration-300" id="nav-bg"></div>
+        <div class="relative flex h-20 max-w-7xl mx-auto px-6 items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 z-50 relative">
+                <!-- Logo Image: Blue Icon -->
+                <div class="w-8 h-8 transition-all duration-300" id="logo-icon-container">
+                    <img src="https://i.ibb.co/7NRgqhWK/aqua-loft-logo.png" alt="Aqua Dental Loft Logo" id="logo-img" class="w-full h-full object-contain">
+                </div>
+                <!-- Logo Text: White initially, changes to Black on scroll -->
+                <span class="font-serif text-lg tracking-tight font-medium text-white transition-colors duration-300" id="logo-text">Aqua Dental Loft</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-1 backdrop-blur-md rounded-full px-2 py-1.5 border transition-colors duration-300" id="nav-container">
+                
+                <!-- 1. Home -->
+                <a href="#" class="nav-link px-4 py-1.5 text-xs font-medium rounded-full transition-colors">Home</a>
+
+                <!-- 2. About Dropdown -->
+                <div class="group relative">
+                    <button class="nav-link flex items-center gap-1 px-4 py-1.5 text-xs font-medium rounded-full transition-colors">
+                        About <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down w-3 h-3 opacity-70"><path d="m6 9 6 6 6-6"></path></svg>
+                    </button>
+                    <!-- Dropdown Panel -->
+                    <div class="absolute top-full left-0 mt-4 w-48 bg-white border border-neutral-100 rounded-xl shadow-xl shadow-neutral-200/20 opacity-0 invisible translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out p-1.5" style="">
+                        <a href="#doctors" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Meet Our Doctors</a>
+                        <a href="#team" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Meet the Team</a>
+                        <a href="#about-us" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">About Us</a>
+                        <a href="#tour" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Office Tour</a>
+                        <a href="#testimonials" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Testimonials</a>
+                        <a href="#why-us" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Why Choose Us</a>
+                    </div>
+                </div>
+
+                <!-- 3. Services Mega Menu -->
+                <div class="group relative">
+                    <button class="nav-link flex items-center gap-1 px-4 py-1.5 text-xs font-medium rounded-full transition-colors">
+                        Services <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down w-3 h-3 opacity-70"><path d="m6 9 6 6 6-6"></path></svg>
+                    </button>
+                    <!-- Mega Menu Panel -->
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[800px] bg-white border border-neutral-100 rounded-xl shadow-2xl shadow-neutral-200/20 opacity-0 invisible translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out overflow-hidden p-6" style="">
+                        <div class="grid grid-cols-3 gap-8">
+                            <!-- Column 1 -->
+                            <div>
+                                <h6 class="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-4" style="">Immediate Care</h6>
+                                <div class="space-y-1">
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Emergency Dental Care</a>
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Tooth Pain / Root Canals</a>
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Tooth Replacement</a>
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Cosmetic Dentistry</a>
+                                </div>
+                            </div>
+                            <!-- Column 2 -->
+                            <div class="border-l border-neutral-100 pl-8" style="">
+                                <h6 class="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-4" style="">Preventive &amp; Family</h6>
+                                <div class="space-y-1">
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">General &amp; Family Dentistry</a>
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Children’s Dentistry</a>
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Cleanings &amp; Checkups</a>
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Gum Disease Treatment</a>
+                                </div>
+                            </div>
+                            <!-- Column 3 -->
+                            <div class="border-l border-neutral-100 pl-8" style="">
+                                <h6 class="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-4" style="">Specialty &amp; Comfort</h6>
+                                <div class="space-y-1">
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Dental Implants</a>
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Sedation Dentistry</a>
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">TMJ &amp; Headache Treatment</a>
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Teeth Whitening</a>
+                                    <a href="services.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Veneers &amp; Bonding</a>
+                                    <a href="services.html" class="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg transition-colors mt-2 text-cyan-600 hover:bg-cyan-50" style="">
+                                        View All Services <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-3 h-3"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. New Patients Dropdown -->
+                <div class="group relative">
+                    <button class="nav-link flex items-center gap-1 px-4 py-1.5 text-xs font-medium rounded-full transition-colors">
+                        New Patients <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down w-3 h-3 opacity-70"><path d="m6 9 6 6 6-6"></path></svg>
+                    </button>
+                    <!-- Dropdown Panel -->
+                    <div class="absolute top-full left-0 mt-4 w-56 bg-white border border-neutral-100 rounded-xl shadow-xl shadow-neutral-200/20 opacity-0 invisible translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out p-1.5" style="">
+                        <a href="#" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Your First Visit</a>
+                        <a href="#" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Special Offers</a>
+                        <a href="#" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Online Forms</a>
+                        <a href="#" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Insurance &amp; Financing</a>
+                        <a href="#" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">What to Expect</a>
+                        <a href="contact.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-cyan-600 hover:bg-cyan-50" style="">Book Your Appointment</a>
+                    </div>
+                </div>
+
+                <!-- 5. Contact Dropdown -->
+                <div class="group relative">
+                    <button class="nav-link flex items-center gap-1 px-4 py-1.5 text-xs font-medium rounded-full transition-colors">
+                        Contact <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down w-3 h-3 opacity-70"><path d="m6 9 6 6 6-6"></path></svg>
+                    </button>
+                    <!-- Dropdown Panel -->
+                    <div class="absolute top-full right-0 mt-4 w-52 bg-white border border-neutral-100 rounded-xl shadow-xl shadow-neutral-200/20 opacity-0 invisible translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out p-1.5" style="">
+                        <a href="contact.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Location &amp; Hours</a>
+                        <a href="contact.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Contact Us</a>
+                        <a href="contact.html" class="block px-3 py-2 text-xs font-medium text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors hover:text-cyan-600" style="">Request Appointment</a>
+                        <a href="tel:+15612642264" class="block px-3 py-2 text-xs font-semibold text-neutral-900 hover:bg-neutral-50 rounded-lg transition-colors mt-1 border-t border-neutral-100" style="">
+                            <span class="text-[10px] text-neutral-400 block font-normal uppercase tracking-wide" style="">Call Us</span>
+                            +1 (561) 264-2264
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="hidden lg:block z-50">
+                <a href="contact.html" class="bg-white text-neutral-950 px-5 py-2 rounded-full text-xs font-semibold tracking-wide hover:bg-neutral-200 transition-colors shadow-lg shadow-white/10" style="">
+                    Book Now
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="lg:hidden p-2 z-50 relative" id="mobile-toggle" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu w-6 h-6"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-neutral-950 z-40 flex flex-col pt-24 px-6 opacity-0 pointer-events-none transition-all duration-300 lg:hidden overflow-y-auto" style="">
+            <div class="flex flex-col gap-6 pb-20">
+                <a href="#" class="text-xl font-serif text-white border-b border-white/10 pb-4" onclick="toggleMobileMenu()">Home</a>
+                
+                <!-- Mobile About -->
+                <div class="flex flex-col gap-3">
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-cyan-400" style="">About</h3>
+                    <a href="#doctors" class="text-lg text-neutral-300 font-light" onclick="toggleMobileMenu()" style="">Meet Our Doctors</a>
+                    <a href="#team" class="text-lg text-neutral-300 font-light" onclick="toggleMobileMenu()" style="">Meet the Team</a>
+                    <a href="#about-us" class="text-lg text-neutral-300 font-light" onclick="toggleMobileMenu()" style="">About Us</a>
+                </div>
+
+                <!-- Mobile Services -->
+                <div class="flex flex-col gap-3 mt-4">
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-cyan-400" style="">Services</h3>
+                    <a href="services.html" class="text-lg text-neutral-300 font-light" onclick="toggleMobileMenu()" style="">Emergency Dentistry</a>
+                    <a href="services.html" class="text-lg text-neutral-300 font-light" onclick="toggleMobileMenu()" style="">Cosmetic Dentistry</a>
+                    <a href="services.html" class="text-lg text-neutral-300 font-light" onclick="toggleMobileMenu()" style="">General Dentistry</a>
+                    <a href="services.html" class="text-sm font-semibold text-white mt-2" onclick="toggleMobileMenu()">View All Services →</a>
+                </div>
+
+                <!-- Mobile New Patients -->
+                <div class="flex flex-col gap-3 mt-4">
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-cyan-400" style="">New Patients</h3>
+                    <a href="#" class="text-lg text-neutral-300 font-light" onclick="toggleMobileMenu()" style="">First Visit</a>
+                    <a href="#" class="text-lg text-neutral-300 font-light" onclick="toggleMobileMenu()" style="">Insurance &amp; Financing</a>
+                </div>
+
+                <!-- Mobile Contact -->
+                <div class="flex flex-col gap-3 mt-4">
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-cyan-400" style="">Contact</h3>
+                    <a href="contact.html" class="text-lg text-neutral-300 font-light" onclick="toggleMobileMenu()" style="">Location &amp; Hours</a>
+                    <a href="contact.html" class="text-lg text-neutral-300 font-light" onclick="toggleMobileMenu()" style="">Message Us</a>
+                    <a href="https://www.google.com/maps/place/Aqua+Dental+Loft/@26.3490243,-80.1576219,17z/data=!3m1!4b1!4m6!3m5!1s0x88d91c3b0fbe75e7:0x51f8ed01c7308d69!8m2!3d26.3490243!4d-80.1576219!16s%2Fg%2F1tfmp5hj?entry=ttu&amp;g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-lg text-neutral-300 font-light" onclick="toggleMobileMenu()" style="">
+                        7050 W Palmetto Park Rd #52,  Boca Raton, FL 33433
+                    </a>
+                    <a href="tel:+15612642264" class="text-xl text-white font-serif mt-2" onclick="toggleMobileMenu()">+1 (561) 264-2264</a>
+                </div>
+
+                <a href="contact.html" class="mt-8 px-8 py-4 bg-white text-neutral-950 rounded-full text-center text-sm font-semibold" onclick="toggleMobileMenu()" style="">Book Appointment</a>
+            </div>
+            
+            <button class="absolute top-6 right-6 text-white p-2" onclick="toggleMobileMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x w-6 h-6"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative w-full h-[100dvh] min-h-[700px] overflow-hidden bg-neutral-950" style="">
+        <!-- Background -->
+        <div class="absolute inset-0 w-full h-full animate-zoom-slow">
+            <img src="dental_office_hero.png" alt="Aqua Dental Loft Office" class="w-full h-full object-cover opacity-90">
+            <!-- Increased bottom gradient opacity for better text contrast over legs/sofa -->
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-transparent to-neutral-950/20" style=""></div>
+            <div class="bg-black/10 absolute top-0 right-0 bottom-0 left-0"></div>
+        </div>
+
+        <!-- Content -->
+        <!-- Reduced bottom padding (pb-4 md:pb-8) to keep text low and away from faces -->
+        <div class="relative z-10 h-full max-w-7xl mx-auto px-6 flex flex-col justify-end pb-4 md:pb-8">
+            <!-- Constrained width (max-w-3xl) to keep text to the left/center-left -->
+            <div class="max-w-3xl">
+                <!-- Headline -->
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-white leading-[0.95] tracking-tight mb-4 animate-fade-in-up delay-100 drop-shadow-lg">
+                    We believe everyone 
+                    deserves a <span class="italic font-light text-white/80">smile they love.</span>
+                </h1>
+
+                <!-- Actions -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 animate-fade-in-up delay-200 mb-6">
+                    <a href="contact.html" class="w-full sm:w-auto px-8 py-4 bg-white text-neutral-950 rounded-full text-xs font-semibold hover:bg-neutral-200 transition-colors text-center shadow-lg shadow-white/5" style="">
+                        Book Consultation
+                    </a>
+                    <a href="services.html" class="w-full sm:w-auto px-8 py-4 glass-panel text-white rounded-full text-xs font-semibold hover:bg-white/10 transition-colors flex items-center justify-center gap-2 group border border-white/20">
+                        View Treatments
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel mb-4 animate-fade-in-up delay-300 border-white/10 w-fit">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" style=""></span>
+                    <span class="text-[10px] uppercase tracking-widest text-neutral-200 font-semibold" style="">Accepting New Patients</span>
+                </div>
+
+                <!-- Address & Phone -->
+                <div class="max-w-lg animate-fade-in-up delay-300 text-neutral-300" style="">
+                    <div class="flex flex-col gap-2 text-sm font-medium">
+                        <a href="https://www.google.com/maps/place/Aqua+Dental+Loft/@26.3490243,-80.1576219,17z/data=!3m1!4b1!4m6!3m5!1s0x88d91c3b0fbe75e7:0x51f8ed01c7308d69!8m2!3d26.3490243!4d-80.1576219!16s%2Fg%2F1tfmp5hj?entry=ttu&amp;g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3 hover:text-white transition-colors group/addr">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin w-5 h-5 mt-0.5 text-cyan-400 group-hover/addr:text-cyan-300" style=""><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span class="leading-snug">7050 W Palmetto Park Rd #52, Boca Raton, FL 33433</span>
+                        </a>
+                        <a href="tel:+15612642264" class="flex items-center gap-3 hover:text-white transition-colors group/phone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone w-5 h-5 text-cyan-400 group-hover/phone:text-cyan-300" style=""><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                            <span>+1 (561) 264-2264</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Hint -->
+            <div class="absolute bottom-12 right-6 animate-fade-in-up delay-300 hidden md:flex items-center gap-4 text-white/60">
+                <span class="text-[10px] uppercase tracking-widest">Scroll to explore</span>
+                <div class="w-12 h-px bg-white/20"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Grid (Updated) -->
+    <section id="services" class="py-32 px-6 bg-white border-b border-neutral-100" style="">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal-on-scroll">
+                <div>
+                    <span class="text-neutral-500 text-[10px] font-bold tracking-[0.2em] uppercase mb-3 block" style="">Our Expertise</span>
+                    <h2 class="text-3xl md:text-4xl tracking-tight text-neutral-900" style="">Services</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Service 1: General Dentistry -->
+                <div class="group cursor-pointer reveal-on-scroll">
+                    <div class="relative aspect-[3/4] overflow-hidden rounded-[10px] mb-5 bg-neutral-200" style="">
+                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1000&auto=format&fit=crop" alt="General Dentistry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-2 py-1 text-[10px] font-bold uppercase tracking-wide rounded-sm">Accepting New Patients</div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold tracking-tight text-neutral-900 mb-1 transition-colors group-hover:text-cyan-600" style="">General Dentistry</h3>
+                        <p class="text-xs text-neutral-500 leading-relaxed mb-3" style="">Comprehensive checkups, cleanings, and preventative care for the whole family.</p>
+                        <span class="text-xs font-medium text-neutral-900 underline decoration-neutral-300 underline-offset-4" style="">Comprehensive Care</span>
+                    </div>
+                </div>
+
+                <!-- Service 2: Cosmetic Dentistry -->
+                <div class="group cursor-pointer reveal-on-scroll delay-100">
+                    <div class="relative aspect-[3/4] overflow-hidden rounded-[10px] mb-5 bg-neutral-200" style="">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1000&auto=format&fit=crop" alt="Cosmetic Dentistry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-2 py-1 text-[10px] font-bold uppercase tracking-wide rounded-sm">Popular</div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold tracking-tight text-neutral-900 mb-1 transition-colors group-hover:text-cyan-600" style="">Cosmetic Dentistry</h3>
+                        <p class="text-xs text-neutral-500 leading-relaxed mb-3" style="">Veneers, whitening, and full smile makeovers designed by experts.</p>
+                        <span class="text-xs font-medium text-neutral-900 underline decoration-neutral-300 underline-offset-4" style="">Design Your Smile</span>
+                    </div>
+                </div>
+
+                <!-- Service 3: Emergency Dentistry -->
+                <div class="group cursor-pointer reveal-on-scroll delay-200">
+                    <div class="relative aspect-[3/4] overflow-hidden rounded-[10px] mb-5 bg-neutral-200" style="">
+                        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=800&auto=format&fit=crop" alt="Emergency Dentistry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-2 py-1 text-[10px] font-bold uppercase tracking-wide rounded-sm">Immediate Care</div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold tracking-tight text-neutral-900 mb-1 transition-colors group-hover:text-cyan-600" style="">Emergency Dentistry</h3>
+                        <p class="text-xs text-neutral-500 leading-relaxed mb-3" style="">Same-day appointments for toothaches, broken teeth, and urgent relief.</p>
+                        <span class="text-xs font-medium text-neutral-900 underline decoration-neutral-300 underline-offset-4" style="">Book Now</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Services Link (New) -->
+            <div class="mt-12 text-center reveal-on-scroll">
+                <a href="services.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-neutral-200 text-xs font-semibold text-neutral-900 hover:bg-neutral-50 transition-colors group">
+                    View All Services
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-3 h-3 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Intro Section -->
+    <section id="about" class="py-24 px-6 bg-white border-b border-neutral-100" style="">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1 reveal-on-scroll">
+                    <!-- Dentist Carousel -->
+                    <div class="relative aspect-[4/5] rounded-lg overflow-hidden group" id="dentistCarousel">
+                        <!-- Slides wrapper -->
+                        <div class="w-full h-full" id="dentistSlidesWrapper">
+                            <!-- Slide 1: Woman dentist -->
+                            <div class="dentist-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100" data-index="0">
+                                <img src="ai_dentist_woman.png" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700" alt="Dentista Aqua Dental Loft">
+                                <div class="absolute bottom-6 left-6 right-36 bg-white/90 backdrop-blur-md p-5 rounded-sm border border-white">
+                                    <p class="font-serif italic text-lg text-neutral-900">"Beauty is about enhancing what you have. Let yourself shine through."</p>
+                                </div>
+                            </div>
+                            <!-- Slide 2: Man dentist -->
+                            <div class="dentist-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0" data-index="1">
+                                <img src="ai_dentist_man.png" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700" alt="Dentista Aqua Dental Loft">
+                                <div class="absolute bottom-6 left-6 right-36 bg-white/90 backdrop-blur-md p-5 rounded-sm border border-white">
+                                    <p class="font-serif italic text-lg text-neutral-900">"Excellence in dentistry is not a skill, it's an attitude we bring every day."</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Arrow: Previous -->
+                        <button onclick="dentistCarouselPrev()" class="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/80 backdrop-blur border border-white/60 shadow-md flex items-center justify-center hover:bg-white transition-all duration-200 opacity-0 group-hover:opacity-100" aria-label="Previous">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+
+                        <!-- Arrow: Next -->
+                        <button onclick="dentistCarouselNext()" class="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/80 backdrop-blur border border-white/60 shadow-md flex items-center justify-center hover:bg-white transition-all duration-200 opacity-0 group-hover:opacity-100" aria-label="Next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+
+
+                    </div>
+
+                    <script>
+                        (function() {
+                            var current = 0;
+                            var total = 2;
+                            function updateCarousel() {
+                                document.querySelectorAll('.dentist-slide').forEach(function(s, i) {
+                                    s.style.opacity = i === current ? '1' : '0';
+                                    s.style.zIndex = i === current ? '1' : '0';
+                                });
+                                document.querySelectorAll('.dentist-dot').forEach(function(d, i) {
+                                    d.style.backgroundColor = i === current ? 'white' : 'rgba(255,255,255,0.4)';
+                                });
+                            }
+                            window.dentistCarouselNext = function() { current = (current + 1) % total; updateCarousel(); };
+                            window.dentistCarouselPrev = function() { current = (current - 1 + total) % total; updateCarousel(); };
+                            window.dentistCarouselGoTo = function(i) { current = i; updateCarousel(); };
+                            updateCarousel();
+                        })();
+                    </script>
+                </div>
+                <div class="order-1 md:order-2 reveal-on-scroll delay-100">
+                    <span class="text-cyan-600 text-[10px] font-bold tracking-[0.2em] uppercase mb-4 block" style="">About Aqua Dental Loft</span>
+                    <h2 class="text-4xl md:text-5xl tracking-tight text-neutral-900 mb-6" style="">A Sanctuary for <span class="italic text-neutral-500" style="">Modern Dentistry</span></h2>
+                    <p class="text-neutral-600 font-light leading-relaxed mb-6" style="">
+                        We welcome you to our modern Boca Raton studio, a sanctuary featuring a relaxing winter garden and exquisite orchid collection. Entrusted with the care of families from one to 100, we provide award-winning comprehensive and emergency services in a fresh, stress-free environment.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8 mt-8 border-t border-neutral-100 pt-8" style="">
+                        <div>
+                            <span class="block text-3xl font-serif text-neutral-900 mb-1" style=""><span class="js-counter" data-target="13">0</span>+</span>
+                            <span class="text-xs text-neutral-500 uppercase tracking-wide" style="">Years Experience</span>
+                        </div>
+                        <div>
+                            <span class="block text-3xl font-serif text-neutral-900 mb-1" style=""><span class="js-counter" data-target="1000">0</span>+</span>
+                            <span class="text-xs text-neutral-500 uppercase tracking-wide" style="">Happy Patients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Doctors (New Section) -->
+    <section id="doctors" class="py-24 px-6 bg-neutral-50 border-b border-neutral-100" style="">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal-on-scroll">
+                <span class="text-cyan-600 text-[10px] font-bold tracking-[0.2em] uppercase mb-3 block" style="">Our Team</span>
+                <h2 class="text-3xl md:text-4xl tracking-tight text-neutral-900 font-serif" style="">Meet the Doctors</h2>
+                <div class="w-12 h-px bg-cyan-200 mx-auto mt-6" style=""></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 max-w-5xl mx-auto">
+                <!-- Dr. Casey -->
+                <div class="flex flex-col items-center md:items-start gap-6 reveal-on-scroll group">
+                    <div class="relative w-48 h-48 rounded-full p-1 border border-neutral-200 bg-white group-hover:border-cyan-200 transition-colors duration-300" style="">
+                        <div class="w-full h-full rounded-full overflow-hidden">
+                            <img src="https://i.ibb.co/Y4LpBkGf/dr-casey-pedro-icon.webp" alt="Dr. Casey Pedro" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl font-serif text-neutral-900 mb-2" style="">Dr. Casey Pedro</h3>
+                        <p class="text-[10px] font-bold uppercase tracking-widest text-cyan-600 mb-4" style="">DMD, Implant Dentistry</p>
+                        <p class="text-sm text-neutral-600 font-light leading-relaxed" style="">
+                            Dr. Casey completed his DMD (Doctor of Medicine in Dentistry) at Boston University School of Dental Medicine. He truly enjoys helping patients get their smiles back through Implant Dentistry. His experience in oral plastics and minimally invasive surgical techniques allow for better outcomes and happier and healthier patients. Dr. Casey is meticulous, energetic and unbelievably social - the type of surgeon we cherish at Aqua Dental Loft.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Dr. Jamily -->
+                <div class="flex flex-col items-center md:items-start gap-6 reveal-on-scroll delay-100 group">
+                    <div class="relative w-48 h-48 rounded-full p-1 border border-neutral-200 bg-white group-hover:border-cyan-200 transition-colors duration-300" style="">
+                        <div class="w-full h-full rounded-full overflow-hidden">
+                            <img src="https://i.ibb.co/VWF4FqZ2/dr-jamily-pedro-icon.webp" alt="Dr. Jamily Pedro" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl font-serif text-neutral-900 mb-2" style="">Dr. Jamily Pedro</h3>
+                        <p class="text-[10px] font-bold uppercase tracking-widest text-cyan-600 mb-4" style="">DMD, Cosmetic Dentistry</p>
+                        <p class="text-sm text-neutral-600 font-light leading-relaxed" style="">
+                            Dr. Jamily has two doctorate degrees from Boston University School of Dental Medicine and the University of Minas Gerais (Brazil). She is a gentle, caring dentist who uses the most advanced techniques and materials available. She practices comfortable, health-centered dentistry with a strong emphasis on getting to know each of her patients. In addition to her technical proficiency, Dr. Jamily is a careful listener.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Full Team Section (New) -->
+    <section id="team" class="py-24 px-6 bg-white border-b border-neutral-100" style="">
+        <div class="max-w-7xl mx-auto">
+             <div class="text-center mb-12 reveal-on-scroll">
+                <span class="text-cyan-600 text-[10px] font-bold tracking-[0.2em] uppercase mb-3 block" style="">Behind the Smiles</span>
+                <h2 class="text-3xl md:text-4xl tracking-tight text-neutral-900 font-serif" style="">Meet the Full Team</h2>
+            </div>
+            
+            <div class="relative rounded-xl overflow-hidden shadow-2xl reveal-on-scroll delay-100 group">
+                <img src="https://i.ibb.co/ync4gYGR/AD-Team.jpg" alt="Aqua Dental Loft Team" class="w-full h-auto object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
+                <div class="absolute bottom-8 left-8 text-white max-w-2xl">
+                    <p class="font-serif italic text-xl md:text-2xl mb-2">"United by a passion for care."</p>
+                    <p class="text-sm text-neutral-200 font-light" style="">Our hygienists, assistants, and coordinators work together to ensure your visit is seamless from the moment you walk in.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results / Transformations -->
+    <section id="new-patients" class="py-32 px-6 bg-neutral-950 text-white overflow-hidden" style="">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+                <div class="lg:col-span-5 reveal-on-scroll">
+                    <span class="text-[10px] font-bold tracking-[0.2em] uppercase mb-4 block text-cyan-400" style="">Real Results</span>
+                    <h2 class="text-4xl md:text-5xl tracking-tight mb-6">The Smile <br><span class="font-serif italic text-neutral-500" style="">Makeover</span></h2>
+                    <p class="text-neutral-400 font-light leading-relaxed mb-6 text-sm" style="">
+                        A smile makeover is any combination of cosmetic treatments and procedures to produce a picture-perfect smile. Dr. Casey evaluates your case with an artistic eye and presents your options for a complete smile makeover.
+                    </p>
+                    <p class="text-neutral-400 font-light leading-relaxed mb-8 text-sm" style="">
+                         Our office has state-of-the-art digital imaging equipment to make diagnostic casts and a 'trial smile' that you'll get to try on.
+                    </p>
+                    
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-start gap-4 p-4 border border-white/10 rounded-lg bg-white/5">
+                            <div class="p-2 rounded-md bg-cyan-500/10 text-cyan-400" style="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="scan-face" class="lucide lucide-scan-face w-5 h-5"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><path d="M9 9h.01"></path><path d="M15 9h.01"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold mb-1">Preview Your Look</h4>
+                                <p class="text-xs text-neutral-400" style="">Before opting for treatment, you'll get to preview the final result and make an informed decision.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 border border-white/10 rounded-lg bg-white/5">
+                            <div class="p-2 rounded-md bg-cyan-500/10 text-cyan-400" style="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" class="lucide lucide-sparkles w-5 h-5"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold mb-1">Polished Finish</h4>
+                                <p class="text-xs text-neutral-400" style="">Your smile makeover may also include a teeth whitening treatment to polish off your brilliant, new look.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 reveal-on-scroll delay-100">
+                    <div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden border border-white/10 shadow-2xl comparison-slider select-none" id="comparisonSlider">
+                        <!-- After Image -->
+                        <img src="https://i.ibb.co/pr9SrnpV/Untitled-Live-Doc.png" class="absolute inset-0 w-full h-full object-cover select-none pointer-events-none" alt="After Result" draggable="false">
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur px-2 py-1 text-[10px] font-bold tracking-wider rounded text-white select-none pointer-events-none">AFTER</div>
+
+                        <!-- Before Image -->
+                        <div class="comparison-item" id="comparisonOverlay" style="width: 50%;">
+                            <img src="https://i.ibb.co/rKp2mnPt/Before.jpg" class="absolute top-0 left-0 h-full max-w-none w-full object-cover select-none pointer-events-none" id="comparisonImageBefore" alt="Before Result" style="width: 713px;" draggable="false">
+                            <div class="absolute top-4 left-4 bg-black/60 backdrop-blur px-2 py-1 text-[10px] font-bold tracking-wider rounded text-white select-none pointer-events-none">BEFORE</div>
+                        </div>
+
+                        <!-- Handle -->
+                        <div class="comparison-handle" id="comparisonHandle" style="left: 50%;">
+                            <div class="comparison-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevrons-left-right" class="lucide lucide-chevrons-left-right w-4 h-4 text-neutral-900" style=""><path d="m9 7-5 5 5 5"></path><path d="m15 7 5 5-5 5"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking System -->
+    <section id="booking" class="py-24 px-6 bg-white border-t border-neutral-200" style="">
+        <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-neutral-100 flex flex-col md:flex-row" style="">
+            
+            <!-- Left Panel -->
+            <div class="md:w-1/3 bg-neutral-950 p-10 text-white flex flex-col justify-between" style="">
+                <div>
+                    <h3 class="text-2xl font-serif mb-4">Book Your Visit</h3>
+                    <p class="text-xs text-neutral-400 mb-8 leading-relaxed" style="">
+                        Select a service and time that works for you. A deposit is required to secure your appointment.
+                    </p>
+                    <ul class="space-y-4 text-xs text-neutral-300" style="">
+                        <li class="flex items-center gap-3">
+                            <div class="p-1 rounded-full bg-white/10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-3 h-3"><path d="M20 6 9 17l-5-5"></path></svg></div>
+                            Instant Confirmation
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="p-1 rounded-full bg-white/10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield-check" class="lucide lucide-shield-check w-3 h-3"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></div>
+                            Secure Payment
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="p-1 rounded-full bg-white/10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" class="lucide lucide-clock w-3 h-3"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
+                            24h Cancellation Policy
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-12">
+                    <p class="text-[10px] uppercase tracking-widest text-neutral-500 mb-2" style="">Contact Support</p>
+                    <p class="text-sm font-medium">+1 (561) 264-2264</p>
+                </div>
+            </div>
+
+            <!-- Right Panel (Form) -->
+            <div class="md:w-2/3 p-10">
+                <div class="mb-8">
+                    <label class="block text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-4" style="">Select Service Category</label>
+                    <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
+                        <label class="cursor-pointer">
+                            <input type="radio" name="category" class="peer sr-only" checked="">
+                            <div class="px-4 py-2 rounded-full border border-neutral-200 text-xs font-medium text-neutral-600 peer-checked:bg-neutral-900 peer-checked:text-white peer-checked:border-neutral-900 transition-all" style="">
+                                Dental
+                            </div>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="category" class="peer sr-only">
+                            <div class="px-4 py-2 rounded-full border border-neutral-200 text-xs font-medium text-neutral-600 peer-checked:bg-neutral-900 peer-checked:text-white peer-checked:border-neutral-900 transition-all" style="">
+                                Injectables
+                            </div>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="category" class="peer sr-only">
+                            <div class="px-4 py-2 rounded-full border border-neutral-200 text-xs font-medium text-neutral-600 peer-checked:bg-neutral-900 peer-checked:text-white peer-checked:border-neutral-900 transition-all" style="">
+                                Aesthetics
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                    <!-- Option 1 -->
+                    <label class="cursor-pointer group">
+                        <input type="radio" name="service" class="peer sr-only" checked="">
+                        <div class="p-4 rounded-xl border border-neutral-200 bg-white peer-checked:ring-1 transition-all hover:border-cyan-200 peer-checked:border-cyan-500 peer-checked:ring-cyan-500" style="">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-semibold text-neutral-900" style="">Whitening</span>
+                                <span class="text-sm font-medium text-neutral-900" style="">$385</span>
+                            </div>
+                            <span class="text-[10px] text-neutral-400" style="">60 mins</span>
+                        </div>
+                    </label>
+                    <!-- Option 2 -->
+                    <label class="cursor-pointer group">
+                        <input type="radio" name="service" class="peer sr-only">
+                        <div class="p-4 rounded-xl border border-neutral-200 bg-white peer-checked:ring-1 transition-all hover:border-cyan-200 peer-checked:border-cyan-500 peer-checked:ring-cyan-500" style="">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-semibold text-neutral-900" style="">Consultation</span>
+                                <span class="text-sm font-medium text-neutral-900" style="">Free</span>
+                            </div>
+                            <span class="text-[10px] text-neutral-400" style="">45 mins</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="mb-8">
+                    <label class="block text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-4" style="">Availability</label>
+                    <div class="grid grid-cols-4 gap-3">
+                        <button class="py-2.5 text-xs font-medium border border-neutral-200 rounded-lg hover:border-neutral-400 focus:bg-neutral-900 focus:text-white focus:border-neutral-900 transition-colors" style="">9:00 AM</button>
+                        <button class="py-2.5 text-xs font-medium border border-neutral-200 rounded-lg bg-neutral-50 text-neutral-300 cursor-not-allowed" style="">10:30 AM</button>
+                        <button class="py-2.5 text-xs font-medium border border-neutral-200 rounded-lg hover:border-neutral-400 focus:bg-neutral-900 focus:text-white focus:border-neutral-900 transition-colors" style="">1:00 PM</button>
+                        <button class="py-2.5 text-xs font-medium border border-neutral-200 rounded-lg hover:border-neutral-400 focus:bg-neutral-900 focus:text-white focus:border-neutral-900 transition-colors" style="">3:15 PM</button>
+                    </div>
+                </div>
+
+                <button class="w-full py-3.5 bg-neutral-900 text-white rounded-lg text-sm font-semibold hover:bg-neutral-800 transition-transform active:scale-[0.99]" style="">
+                    Continue to Details
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-neutral-950 text-white pt-20 pb-10 border-t border-neutral-900" style="">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-1">
+                    <a href="#" class="font-serif text-2xl text-white mb-6 block">Aqua Dental Loft</a>
+                    <div class="flex gap-4 text-neutral-400" style="">
+                        <a href="#" class="hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" class="lucide lucide-instagram w-5 h-5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+                        <a href="#" class="hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="facebook" class="lucide lucide-facebook w-5 h-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" class="hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="twitter" class="lucide lucide-twitter w-5 h-5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-sm font-semibold mb-6 text-neutral-200" style="">Navigation</h4>
+                    <ul class="space-y-3 text-xs text-neutral-400 font-light" style="">
+                        <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-semibold mb-6 text-neutral-200" style="">Contact</h4>
+                    <ul class="space-y-3 text-xs text-neutral-400 font-light" style="">
+                        <li class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin w-4 h-4 shrink-0 mt-0.5 text-cyan-400" style=""><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> 
+                            <a href="https://www.google.com/maps/place/Aqua+Dental+Loft/@26.3490243,-80.1576219,17z/data=!3m1!4b1!4m6!3m5!1s0x88d91c3b0fbe75e7:0x51f8ed01c7308d69!8m2!3d26.3490243!4d-80.1576219!16s%2Fg%2F1tfmp5hj?entry=ttu&amp;g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="hover:text-white transition-colors">
+                                7050 W Palmetto Park Rd #52, Boca Raton, FL 33433
+                            </a>
+                        </li>
+                        <li class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone w-4 h-4 shrink-0 text-cyan-400" style=""><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg> 
+                            <a href="tel:+15612642264" class="hover:text-white transition-colors">+1 (561) 264-2264</a>
+                        </li>
+                        <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail w-4 h-4 shrink-0"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg> concierge@aquadental.com</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-semibold mb-6 text-neutral-200" style="">Hours</h4>
+                    <ul class="space-y-3 text-xs text-neutral-400 font-light" style="">
+                        <li class="flex justify-between"><span>Mon - Fri</span> <span>8:00 AM - 5:00 PM</span></li>
+                        <li class="flex justify-between"><span>Saturday</span> <span>Closed</span></li>
+                        <li class="flex justify-between"><span>Sunday</span> <span>Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-500 gap-4" style="">
+                <p>© 2026 Aqua Dental Loft. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script src="scripts.js"></script>
+</body></html>
